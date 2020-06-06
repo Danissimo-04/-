@@ -1,0 +1,28 @@
+using UnityEngine;
+using System.Collections;
+using System;
+
+public class ExsampleBehaviourScript : MonoBehaviour
+{
+    void Start()
+    {
+        
+    }
+
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.R))
+        {
+            gameObject.GetComponent<Renderer>().material.color = color.red;
+        }
+        if(Input.GetKeyDown(KeyCode.G))
+        {
+            gameObject.GetComponent<Renderer>().material.color = color.green;
+        }
+        if(input.GetKeyDown(KeyCode.B))
+        {
+            gameObject.GetComponent<Renderer>().material.color = color.blue;
+        }
+    }
+
+}
